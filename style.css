@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.box {
+    margin: 10% auto;
+    width: 38em;
+    height: 28rem;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    padding: 0 auto;
+    transition: 0.5s;
+}
+
+
+
+.box-image {
+    width: 150%;
+    background-image: url(/images/image-product-desktop.jpg);
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+     }
+
+.box-inside {
+margin: 3% 5%;
+}
+
+.perfume {
+    letter-spacing: 3px;
+}
+
+p {
+    padding: 6% 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+  }
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 40px;
+}
+
+.box-payment {
+    display: flex;
+}
+
+.box-payment p {
+    padding-left: 10%;
+    text-decoration: line-through;
+}
+
+.box-payment h1 {
+    color: hsl(158, 36%, 37%);
+}
+
+
+.payment { 
+    margin-top: 5%;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    background-color: hsl(158, 36%, 37%) ;
+    border-radius: 6px;
+    transition: 1s; 
+ }
+
+.payment img{
+    height: 8%;
+    width: 12%;
+   margin: 0 5px;
+}
+
+.payment-inside{
+    margin: auto;
+}
+
+button{
+    background-color:transparent;
+    border:none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.payment:hover {
+    background-color: hsl(158, 34%, 15%) ;
+}
+
+@media screen and (max-width: 375px) {
+    
+  .box {
+    width: 90%;
+    margin:  5%;
+    height: 100%;
+ display: block;
+ padding-bottom: 20px;
+  }
+  .box-image {
+background: url(/images/image-product-mobile.jpg);
+width: 100%;
+height: 15em;
+background-position: center;
+background-size: cover;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 0px;
+  }
+ 
+  .box-inside {
+    justify-content: center;
+    margin: 0 5%;
+  }
+  .perfume {
+    font-size: 13px;
+    margin: 0 auto;
+  }
+  .box-inside h1 {
+    font-size: 29px;
+    font-weight: bolder;
+    font-family: 'Fraunces', serif;
+  }
+  .box-inside p {
+    padding: 2px auto;
+    margin: 0;
+    font-size: 15px;
+  }
+  .box-payment {
+    display: flex;
+  }
+  .box-payment p {
+    padding: 3% 5%;
+  }
+  .payment {
+    height: 3em;
+    padding: 0px 0
+  }
+
+  }
